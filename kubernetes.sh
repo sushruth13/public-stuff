@@ -10,4 +10,4 @@ sysctl --system
   curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
   echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
 }
-sudo apt-get update && sudo apt-get install kubelet kubeadm kubectl -y && sudo apt-hold mark kubectl kubeadm kubectl 
+sudo apt-get update && sudo apt-get install kubelet kubeadm kubectl -y && sudo apt-mark hold kubectl kubeadm kubectl 
